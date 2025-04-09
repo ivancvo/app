@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:id="@+id/layout_usuario"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:padding="24dp"
+                                                   android:background="#FFB6C1">
+
+
+    <EditText
+            android:id="@+id/etNombreUsuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de usuario"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="80dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:id="@+id/etContrasena"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@+id/etNombreUsuario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="32dp"/>
+    <EditText
+            android:id="@+id/etCedula"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Cédula"
+            app:layout_constraintTop_toBottomOf="@id/etContrasena"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@id/etCedula"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" app:layout_constraintHorizontal_bias="0.0"/>
+
+    <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            app:layout_constraintTop_toBottomOf="@+id/etCorreo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0" android:layout_marginTop="20dp"/>
+    <Spinner
+            android:id="@+id/spinnerRol"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/etTelefono"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="28dp"
+            android:background="8E44AD"/>
+    <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:backgroundTint="#8E44AD"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/spinnerRol"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="48dp" app:layout_constraintHorizontal_bias="1.0"/>
+    <TextView
+            android:text="registro de usuarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.436" app:layout_constraintVertical_bias="0.036"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
